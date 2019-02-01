@@ -2,7 +2,7 @@ package lab14;
 
 public class Rocky extends Player{
 
-	private Roshambo roshambo;
+	public Roshambo roshambo;
 	
 	public Rocky() {
 	}
@@ -15,6 +15,11 @@ public class Rocky extends Player{
 	protected Roshambo generateRoshambo() {
 		this.roshambo = Roshambo.ROCK;
 		return roshambo;
+	}
+	
+	@Override
+	public String toString() {
+		return this.name + roshambo;
 	}
 	
 }

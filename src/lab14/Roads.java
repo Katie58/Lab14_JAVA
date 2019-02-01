@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Roads extends Player{
 
-	private Roshambo roshambo;
+	public Roshambo roshambo;
 	
 	public Roads () {
 		this.roshambo = generateRoshambo();
@@ -29,4 +29,9 @@ public class Roads extends Player{
 		}
 		return roshambo;
 	}	
+	
+	@Override
+	public String toString() {
+		return this.name + roshambo;
+	}
 }
